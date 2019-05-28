@@ -1,0 +1,8 @@
+ 
+// set a image on a label
+
+	JLabel new_book = new JLabel("");
+
+	Image book=new ImageIcon(this.getClass().getResource("/book.png")).getImage();
+
+	new_book.setIcon(new ImageIcon(book));

@@ -1,0 +1,76 @@
+[Version]
+Signature="$CHICAGO$"
+Class=Printer
+ClassGUID={4d36e979-e325-11ce-bfc1-08002be10318}
+Provider=%MS%
+CatalogFile=print9x.cat
+CatalogFile.NT=print2K.cat
+DriverVer=1/1/2000,4.00.2450.1
+
+; The Manufacturer section lists all of the manufacturers that we will
+; display in the Dialog box
+
+[Manufacturer]
+"Man"
+
+[HP]
+"Man printer" = DRIVER.DRV,MYPNPID
+
+[DRIVER.DRV.NT]
+; Windows 2000 printer driver installation entries go here.
+
+[DRIVER.DRV]
+; Windows 95/Me printer driver installation entries go here.
+
+CopyFiles=@DRIVER.DRV,UNICLR,FINSTALL,MONITOR
+DataSection=UNI_DATA
+PortMonitor=usbmon.dll,usbmon.dll
+DriverVer=1/1/2000,4.00.2450.1
+
+[MONITOR]
+usbmon.dll,,,16
+
+[FINSTALL]
+finstall.dll
+finstall.hlp
+
+[UNICLR]
+iconlib.dll
+dmcolor.dll
+unidrv.dll
+unidrv.hlp
+
+[UNI_DATA]
+HelpFile=unidrv.hlp
+DefaultDataType=EMF
+
+[DestinationDirs.NT]
+DefaultDestDir=66000
+
+[DestinationDirs]
+DefaultDestDir=11
+
+[SourceDisksNames.NT]
+2  =  %Disk2%,,,""
+
+[SourceDisksNames]
+1  =  %Disk1%,,,""
+
+[SourceDisksFiles.NT]
+;NT files to install
+
+[SourceDisksFiles]
+printer.inf  = 1
+finstall.dll = 1
+finstall.hlp = 1
+driver.drv   = 1
+iconlib.dll  = 1
+dmcolor.dll  = 1
+unidrv.dll   = 1
+unidrv.hlp   = 1
+usbmon.dll   = 1
+
+[Strings]
+MS="Microsoft"
+Disk1="Win9x disk"
+Disk2="Win2000 disk"

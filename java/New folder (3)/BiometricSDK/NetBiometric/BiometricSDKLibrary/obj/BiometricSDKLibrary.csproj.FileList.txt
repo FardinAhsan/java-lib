@@ -1,0 +1,5 @@
+bin\Debug\BiometricSDKLibrary.dll
+bin\Debug\BiometricSDKLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BiometricSDKLibrary.dll
+obj\Debug\BiometricSDKLibrary.pdb

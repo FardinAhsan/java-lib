@@ -1,0 +1,14 @@
+
+// for set a icon
+
+	* create a source folder.
+	* store image on your source folder.
+	
+
+		JMenuItem mntmNewSt = new JMenuItem("New Student");
+
+		Image studentmn=new ImageIcon(this.getClass().getResource("/studentmn.png")).getImage(); //studentmn.png is path of the image
+
+		mntmNewSt.setIcon(new ImageIcon(studentmn));
+
+		mnNewMenu.add(mntmNewSt);

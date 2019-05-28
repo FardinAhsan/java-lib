@@ -1,0 +1,1 @@
+ UIManager.setLookAndFeel ( WebLookAndFeel.class.getCanonicalName () );

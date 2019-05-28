@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp
+        spec="1.0+"
+        codebase="http://www.jidesoft.com/jdaf"
+        href="jdaf_wizard_demo.jnlp">
+    <information>
+        <title>JDAF Application Wizard</title>
+        <vendor>JIDE Software, Inc.</vendor>
+        <homepage href="/index.html"/>
+        <description>This application is the Application Wizard for JIDE Desktop Application Framework</description>
+        <description kind="short">JDAF Application Wizard</description>
+        <offline-allowed/>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.5+" initial-heap-size="12m" max-heap-size="256m"/>
+        <jar href="jdaf_wizard_demo.jar"/>
+        <property name="apple.laf.useScreenMenuBar" value="true"/>
+        <property name="swing.aatext" value="true"/>
+    </resources>
+    <application-desc main-class="com.jidesoft.app.framework.wizard.JDAFApplicationWizard"/>
+</jnlp> 
+
+
+

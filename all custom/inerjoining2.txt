@@ -1,0 +1,1 @@
+SELECT a.`book_name` as Book ,b.category_name as Category, a.writter as Writer ,sum(a.quentity) as Quentity,a.sefl_no as Self_No, (CASE a.`status` WHEN 0 THEN 'Available' ELSE 'Not available' END)as status FROM book a,book_category b WHERE a.`category_id`=b.id and a.id>1 GROUP by a.book_name

@@ -1,0 +1,20 @@
+///for background image	
+
+
+	desktopPane = new JDesktopPane() {
+		    private Image image;
+		    {
+		        try {
+		        	 image = ImageIO.read(Splash.class.getResource("/resource/icon.jpg"));
+		           // image = ImageIO.read(new File("resource/icon.jpg"));
+		        } catch (IOException e) {
+		            e.printStackTrace();
+		        }
+		    }
+
+		    @Override
+		    protected void paintComponent(Graphics g) {
+		        super.paintComponent(g);
+		        g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
+		    }
+		};

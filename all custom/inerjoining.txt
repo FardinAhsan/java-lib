@@ -1,0 +1,1 @@
+SELECT a.`name`as product ,b.name as category ,c.name as unit FROM products a,product_catagory b,unit c WHERE a.unit_id=c.id AND a.catagory_id=b.id

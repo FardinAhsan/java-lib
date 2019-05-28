@@ -1,0 +1,5 @@
+SELECT purchase_details.product_id as p_id, purchase_details.quentity as debit, 0 as credit from purchase_details
+UNION ALL
+SELECT opening_product.product_id as p_id, opening_product.quentity as debit, 0 as credit FROM opening_product
+UNION ALL
+SELECT sales_deatils.product_id as p_id, 0 as debit, sales_deatils.quentity as credit FROM sales_deatils

@@ -1,0 +1,27 @@
+# opacity change to a panel	
+
+contant_panel == panel	
+
+contant_panel.addMouseListener(new MouseAdapter() {
+			@Override
+			
+			public void mousePressed(MouseEvent evt) {
+				  setOpacity((float)0.8);
+			        xx=evt.getX();
+			        xy=evt.getY();
+			}
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				 setOpacity((float)1.0);
+			}
+		});
+		
+		contant_panel.addMouseMotionListener(new MouseMotionAdapter() {
+			@Override
+			public void mouseDragged(MouseEvent evt) {
+				  int x=evt.getXOnScreen();
+			      int y=evt.getYOnScreen();
+			      SideShow.this.setLocation(x-xx, y-xy);
+		
+			}
+		});

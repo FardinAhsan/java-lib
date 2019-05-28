@@ -1,0 +1,2 @@
+SELECT a.`name` as Product, sum(b.`debit`) as Debit,sum( b.`credit`) as Credit ,sum(b.debit - b.credit) as Blance 
+FROM `product` a, stock_1 b WHERE a.id=b.p_id GROUP BY a.id

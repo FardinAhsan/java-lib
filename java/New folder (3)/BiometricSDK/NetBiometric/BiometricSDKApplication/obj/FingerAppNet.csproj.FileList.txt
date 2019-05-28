@@ -1,0 +1,9 @@
+obj\Debug\FingerAppNet.exe
+obj\Debug\FingerAppNet.pdb
+bin\Debug\FingerAppNet.exe
+bin\Debug\FingerAppNet.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\FingerAppNet.Form1.resources
+obj\Debug\FingerAppNet.csproj.GenerateResource.Cache
+bin\Debug\BiometricSDKLibrary.dll
+bin\Debug\BiometricSDKLibrary.pdb
